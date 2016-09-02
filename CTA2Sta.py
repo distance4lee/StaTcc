@@ -67,11 +67,11 @@ if __name__=="__main__":
 
 	tcc = Grid2Sta( dtinit )
 
-	#fout = 'FY2E_CTA_%s30_UTC.dat' % ( dtinit.strftime('%Y%m%d%H') )
 	TMPDIR = '/home/enso/runtime/StaTcc/tmp'
 	OUTDIR = '/data/StaTcc/%s' % ( dtinit.strftime('%Y%m') )
 	os.system('mkdir -p %s' % (OUTDIR))
 	fout = 'FY2E_CTA_%s15_UTC.dat' % ( dtinit.strftime('%Y%m%d%H') )
+	#fout = 'FY2E_CTA_%s30_UTC.dat' % ( dtinit.strftime('%Y%m%d%H') )
 	fn_fullpath =  os.path.join(TMPDIR, fout)
 	print fn_fullpath
 
